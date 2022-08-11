@@ -29,47 +29,74 @@
 		url('fonts/roboto-condensed.woff') format('woff');
 }
 
+@font-face {
+	font-family: 'Cybrpnuk';
+	src: url('fonts/cybrpnuk.woff2') format('woff2'),
+		url('fonts/cybrpnuk.woff') format('woff');
+}
+
 body {
 	max-width: 800px;
 	margin: auto;
-	padding: 0rem 2rem 2rem;
+	padding: 0em 2em 2em;
 
 	font-family: 'Noto Serif';
 	font-size: 14pt;
 	line-height: 1.5;
-	text-align: justify;
 
 	hyphens: auto;
 }
 
-h1,
+h1 {
+	font-family: Cybrpnuk;
+	font-size: min(7vw, 48pt);
+	text-align: center;
+	max-width: 800px;
+}
+
 h2,
 h3 {
 	font-family: 'Roboto Condensed';
 	text-transform: uppercase;
 }
 
-h1 {
-	text-align: center;
+h2 {
+	border-left: solid 4pt;
+	padding-left: 0.5rem;
 }
 
 h3 {
+	border-bottom: solid thin;
 	margin: 1.5rem 0 0;
+}
+
+p {
+	text-align: justify;
+	margin: .5em 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 cite {
 	font-size: 75%;
+	font-weight: 100;
 	font-style: normal;
 }
 
 ul {
-	padding-left: .5rem;
+	padding-left: .5em;
 }
 
 ul li {
 	list-style-position: inside;
-	text-indent: -2rem;
-	padding-left: 2rem;
+	text-indent: -2em;
+	padding-left: 2em;
 }
 
 ul.plain li {
@@ -77,19 +104,23 @@ ul.plain li {
 }
 
 table {
-	margin: auto;
+	margin: 1em auto;
 	border-collapse: collapse;
-	border-top: solid 1px grey;
-	border-bottom: solid 1px grey;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
 }
 
 table th,
 table td {
-	padding: .25rem 1rem;
+	padding: .25em 1em;
 }
 
 table thead th {
-	border-bottom: solid 2px grey;
+	border-bottom: solid 2px;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .attr {
@@ -120,7 +151,7 @@ ul.skilllist ul li {
 @media (prefers-color-scheme: dark) {
 	body {
 		color: #ccc;
-		background: #1e1e1e;
+		background: #1e1e1e url('images/bg.png');
 	}
 
 	h1 {
@@ -129,25 +160,28 @@ ul.skilllist ul li {
 	}
 
 	h2 {
-		border-left: solid 4pt #ffd700;
-		padding-left: 0.5rem;
+		border-left-color: #ffd700;
 	}
 
 	h3 {
-		border-bottom: solid thin #ffd700;
+		border-bottom-color: #ffd700;
 	}
 
 	a {
 		color: #ffd700;
-		text-decoration: none;
-	}
-
-	a:hover {
-		text-decoration: underline;
 	}
 
 	strong {
 		color: #eee;
+	}
+
+	table {
+		border-top-color: #666;
+		border-bottom-color: #666;
+	}
+
+	table thead th {
+		border-bottom-color: #666;
 	}
 }
 
@@ -174,5 +208,17 @@ ul.skilllist ul li {
 		padding: 0;
 
 		font-size: 11pt;
+	}
+
+	h1 {
+		column-span: all;
+	}
+
+	a {
+		color: #0063cc;
+	}
+
+	table {
+		font-size: 75%;
 	}
 }

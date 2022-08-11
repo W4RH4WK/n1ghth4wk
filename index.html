@@ -45,7 +45,7 @@
 		each other and form the story of the game.&nbsp;<cite>[SRA]</cite></p>
 
 	<p>The order is situation dependent and may be adjusted by spending <a href="#plot-points">Plot Points</a>.
-		If push comes to shove, characters <span class="attr">A</span> + <span class="attr">E</span> can be compared to
+		If push comes to shove, characters <span class="attr">A + E</span> can be compared to
 		determine who goes first.</p>
 
 	<h2 id="checks">Checks</h2>
@@ -78,28 +78,28 @@
 		<tbody>
 			<tr>
 				<td>Very Easy</td>
-				<td align="center">4 dice</td>
-				<td align="center">1</td>
+				<td class="text-center">4 dice</td>
+				<td class="text-center">1</td>
 			</tr>
 			<tr>
 				<td>Easy</td>
-				<td align="center">6 dice</td>
-				<td align="center">2</td>
+				<td class="text-center">6 dice</td>
+				<td class="text-center">2</td>
 			</tr>
 			<tr>
 				<td>Average</td>
-				<td align="center">8 dice</td>
-				<td align="center">3</td>
+				<td class="text-center">8 dice</td>
+				<td class="text-center">3</td>
 			</tr>
 			<tr>
 				<td>Hard</td>
-				<td align="center">10 dice</td>
-				<td align="center">4</td>
+				<td class="text-center">10 dice</td>
+				<td class="text-center">4</td>
 			</tr>
 			<tr>
 				<td>Very Hard</td>
-				<td align="center">12 dice</td>
-				<td align="center">6</td>
+				<td class="text-center">12 dice</td>
+				<td class="text-center">6</td>
 			</tr>
 		</tbody>
 	</table>
@@ -124,15 +124,12 @@
 
 	<h3 id="glitch-die">Glitch Die</h3>
 	<p>A <a href="#plot-points">Plot Point</a> can be spent to introduce the Glitch Die.
-		The Glitch Die is rolled separate from the regular dice pool and does not count towards the hits.</p>
+		The Glitch Die is rolled separate from the regular dice pool and does not count towards the hits.
+		The effect of the Glitch Die is an addition to the regular check's outcome.</p>
 
 	<ul class="plain">
-		<li><span class="dice">⚀</span>&nbsp;:
-			Something bad happens in addition to the regular checks outcome
-		</li>
-		<li><span class="dice">⚅</span>&nbsp;:
-			Something good happens in addition to the regular checks outcome
-		</li>
+		<li><span class="dice">⚀</span>&nbsp;: Something bad happens</li>
+		<li><span class="dice">⚅</span>&nbsp;: Something good happens</li>
 	</ul>
 
 	<h2 id="plot-points">Plot Points</h2>
@@ -153,7 +150,7 @@
 		<li>Change your turn order</li>
 		<li>Move twice as far</li>
 		<li>Heal a box of <span class="cond">🄿</span> or <span class="cond">🅂</span></li>
-		<li>A character's sprites / device / etc. suddenly stop working for a moment</li>
+		<li>A character's sprites/device/etc. suddenly stop working for a moment</li>
 		<li>Take a hit for another character in close proximity</li>
 		<li>Take a free attack action against the NPC who just attacked you</li>
 		<li>…</li>
@@ -172,20 +169,41 @@
 
 	<h3 id="attributes">Attributes</h3>
 
-	<ul class="plain">
-		<li><strong><span class="attr">S</span>&emsp;Strength:</strong>
-			Determines physical strength and represents constitution</li>
-		<li><strong><span class="attr">A</span>&emsp;Agility:</strong>
-			Core combat attribute</li>
-		<li><strong><span class="attr">L</span>&emsp;Logic:</strong>
-			Core technology attribute</li>
-		<li><strong><span class="attr">W</span>&emsp;Willpower:</strong>
-			Core magic attribute</li>
-		<li><strong><span class="attr">C</span>&emsp;Charisma:</strong>
-			Core social attribute</li>
-	</ul>
+	<!-- <p>&nbsp;</p> -->
+
+	<table id="thresholds">
+		<tbody>
+			<tr>
+				<td class="attr text-center">S</td>
+				<td>Strength</td>
+				<td>Physical strength and constitution</td>
+			</tr>
+			<tr>
+				<td class="attr text-center">A</td>
+				<td>Agility</td>
+				<td>Core combat attribute</td>
+			</tr>
+			<tr>
+				<td class="attr text-center">L</td>
+				<td>Logic</td>
+				<td>Core technology attribute</td>
+			</tr>
+			<tr>
+				<td class="attr text-center">W</td>
+				<td>Willpower</td>
+				<td>Core magic attribute</td>
+			</tr>
+			<tr>
+				<td class="attr text-center">C</td>
+				<td>Charisma</td>
+				<td>Core social attribute</td>
+			</tr>
+		</tbody>
+	</table>
 
 	<h3 id="edge">Edge</h3>
+
+	<p>foobar</p>
 
 	<h3 id="essence">Essence</h3>
 
@@ -252,7 +270,7 @@
 		Simply roll the associated attribute.</p>
 
 	<p id="perception"><strong>Perception</strong> is not a skill, but handled as an <em>attribute-only check</em>.
-		Roll <span class="attr">L</span> + <span class="attr">W</span> for a perception check.
+		Roll <span class="attr">L + W</span> for a perception check.
 		Both attributes combined can also be used as <em>passive</em> perception.</p>
 
 	<p id="specialization">A character can <strong>specialize</strong>in certain elements of a skill (e.g. Pistols of
