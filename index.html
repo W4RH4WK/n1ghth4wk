@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shadowrun: Alex</title>
+	<link href="normalize.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<h1 id="title">Shadowrun Alex</h1>
+
+	<h2 id="preface">Preface</h2>
+	<p>Shadowrun originally features a rather complicated rule set and while I don't know whether the game is actually
+		sufficiently balanced to begin with, I think this amount of complexity might not be necessary to give the game
+		enough depth to be enjoyable.
+		Shadowrun 6<sup>th</sup> Edition</cite> was supposed to simplify a lot of the rules and streamline existing
+		systems.
+		However, 6<sup>th</sup> Edition was rushed and is now broken beyond repair in my opinion.
+		On my search for a <em>simpler</em> version of Shadowrun, I discovered Shadowrun Anarchy, which is referred to
+		as the <em>rules-lite</em> version of Shadowrun.
+		Shadowrun Anarchy is based on 5<sup>th</sup> Edition and draws a lot of parallels while actually establishing
+		its own rule set.
+		This is the starting point for my approach.</p>
+
+	<p>This document establishes the basic set of <em>homebrew</em> rules that will govern my play sessions.
+		These rules are mostly based on Shadowrun Anarchy, but will be extended over time.
+		As always, the GM retains the right to overrule the established rules.
+		There is no fluff and no lore here, just mechanics; everything else is found in the original books.
+		Descriptions are kept concise and sometimes incomplete.</p>
+
+	<ul class="plain">
+		<li><strong><cite>[SR:A]</cite>:</strong> Shadowrun Anarchy</li>
+		<li><strong><cite>[SR:5]</cite>:</strong> Shadowrun 5<sup>th</sup> Edition</li>
+		<li><strong><cite>[SR:6]</cite>:</strong> Shadowrun 6<sup>th</sup> Edition</li>
+	</ul>
+
+	<h2 id="narrations">Turns and Narrations</h2>
+
+	<p>Each <strong>turn</strong>, every player has a chance to play out and describe their character's actions, along
+		with other elements of the story going on around them.
+		These descriptions are called <strong>Narrations</strong>, and as the game progresses these Narrations build on
+		each other and form the story of the game.&nbsp;<cite>[SR:A]</cite></p>
+
+	<p>The order is situation dependent and may be adjusted by spending <a href="#plot-points">Plot Points</a>.
+		If push comes to shove, characters <span class="attr">A</span> + <span class="attr">E</span> can be compared to
+		determine who goes first.</p>
+
+	<h2 id="checks">Checks</h2>
+	<p>6-sided dice are used to determine the outcome of certain actions.
+		Checks are typically <em>opposed</em> rolls, the attacker and defender roll dice simultaneously and compare.
+		The defender sets the threshold for the attacker.
+		To speed things up, the GM may use a fixed threshold instead of a defender's roll.
+
+	<ul class="plain">
+		<li><strong>Dice pool:</strong>
+			The dice pool for attacker and defender is determined via Attributes, Skills, Amps, and situational
+			modifiers
+		</li>
+		<li><strong>Hits:</strong>
+			<span class="dice">⚄</span> and <span class="dice">⚅</span> count as hits
+		</li>
+		<li><strong>Net hits:</strong>
+			Hits exceeding the threshold are referred to as net hits
+		</li>
+	</ul>
+	</p>
+
+	<h3 id="repeating-checks">Repeating Checks</h3>
+	<p>Most checks can be repeated for an accumulative <strong>-2 dice</strong> modifier.</p>
+
+	<h3 id="extended-checks">Extended Checks</h3>
+	<p>Some checks take far longer than a moment and therefore require the character to invest time.
+		An extended check accumulates hits over multiple rolls to meet a given (high) threshold.
+		Each roll beyond the first suffers the regular <strong>-2 dice</strong> modifier of
+		<a href="#repeating-checks">repeating checks</a>.
+		A fixed time interval is spent along with each roll.
+	</p>
+
+	<h3 id="teamwork-checks">Teamwork Checks</h3>
+	<p>Outside combat, characters can work together to overcame various obstacles.
+		A Teamwork Check is done by selecting a leader who will do the majority of the work.
+		Other characters my assist by rolling a corresponding check.
+		Each helper's hit adds a bonus die to the leader's dice pool.
+		The number of bonus dice is <strong>limited by the leader's Skill (or higher Attribute)</strong>.
+	</p>
+
+	<h3 id="glitch-die">Glitch Die</h3>
+	<p>A <a href="#plot-point">Plot Point</a> can be spent to introduce the Glitch Die.
+		The Glitch Die is rolled separate from the regular dice pool and does not count towards the hits.
+	</p>
+
+	<ul class="plain">
+		<li><span class="dice">⚀</span>&nbsp;:
+			Something bad happens in addition to the regular checks outcome
+		</li>
+		<li><span class="dice">⚅</span>&nbsp;:
+			Something good happens in addition to the regular checks outcome
+		</li>
+	</ul>
+
+	<h2 id="plot-points">Plot Points</h2>
+	<p>Plot Points are tokens that can be redeemed for special effects.
+		Both, players and the GM, have the ability to spend a Plot Point.
+		When a Plot Point is spent, the spender gives it to the opposition.
+	</p>
+
+	<p>Players <strong>begin</strong> the game <strong>with 3 Plot Points each</strong> and may be awarded more points
+		by the GM.
+		Players may have a <strong>maximum of 5 Plot Points</strong>.
+		Players can only spend one Plot Point at a time.
+		The GM starts with 1 Plot Point.</p>
+
+	<p>Examples for special effects players can spend Plot Points on:</p>
+
+	<ul>
+		<li>Add the Glitch Die to a roll</li>
+		<li>Change your turn order</li>
+		<li>Move twice as far</li>
+		<li>Heal a box of <span class="cond">🄿</span> or <span class="cond">🅂</span></li>
+		<li>A character's sprites / device / etc. suddenly stop working for a moment</li>
+		<li>Take a hit for another character in close proximity</li>
+		<li>Take a free attack action against the NPC who just attacked you</li>
+		<li>…</li>
+	</ul>
+
+	<p>The following applies to the GM:</p>
+
+	<ul>
+		<li>The GM may not use Plot Points to directly aid or hinder a player</li>
+		<li>The GM can spend a Plot Point to introduce the <a href="glitch-die">Glitch Die</a></li>
+		<li>GM can only spend 1 Plot Point per turn</li>
+		<li>GM can spend a Plot Point to influence the initiative order</li>
+	</ul>
+
+	<h2 id="character-stats">Character Stats</h2>
+
+	<h3 id="attributes">Attributes</h3>
+
+	<h3 id="edge">Edge</h3>
+
+	<h3 id="essence">Essence</h3>
+
+	<h3 id="skills">Skills</h3>
+
+	<h3 id="qualities">Qualities</h3>
+
+	<h3 id="amps">Shadow Amps</h3>
+
+	<h3 id="health-armor">Health &amp; Armor</h3>
+	<!-- <span class="cond">🄰</span> -->
+	<!-- <span class="cond">🄿</span> -->
+	<!-- <span class="cond">🅂</span> -->
+
+</body>
+
+</html>
