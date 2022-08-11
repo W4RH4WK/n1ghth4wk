@@ -32,7 +32,7 @@
 body {
 	max-width: 800px;
 	margin: auto;
-	padding: 0em 2em 2em;
+	padding: 0rem 2rem 2rem;
 
 	font-family: 'Noto Serif';
 	font-size: 14pt;
@@ -54,7 +54,7 @@ h1 {
 }
 
 h3 {
-	margin: 1.5em 0 0;
+	margin: 1.5rem 0 0;
 }
 
 cite {
@@ -63,23 +63,36 @@ cite {
 }
 
 ul {
-	padding-left: 1.5em;
+	padding-left: .5rem;
 }
 
 ul li {
-	text-indent: -2em;
-	padding-left: 2em;
-}
-
-ul.plain {
-	padding-left: 0.5em;
+	list-style-position: inside;
+	text-indent: -2rem;
+	padding-left: 2rem;
 }
 
 ul.plain li {
 	list-style: none;
 }
 
-.att {
+table {
+	margin: auto;
+	border-collapse: collapse;
+	border-top: solid 1px grey;
+	border-bottom: solid 1px grey;
+}
+
+table th,
+table td {
+	padding: .25rem 1rem;
+}
+
+table thead th {
+	border-bottom: solid 2px grey;
+}
+
+.attr {
 	font-family: 'Noto Sans';
 	font-weight: bold;
 }
@@ -95,6 +108,15 @@ ul.plain li {
 	margin-left: 1pt;
 }
 
+ul.skilllist li {
+	text-indent: 0;
+	padding-left: 0;
+}
+
+ul.skilllist ul li {
+	font-size: 80%;
+}
+
 @media (prefers-color-scheme: dark) {
 	body {
 		color: #ccc;
@@ -108,7 +130,7 @@ ul.plain li {
 
 	h2 {
 		border-left: solid 4pt #ffd700;
-		padding-left: 0.5em;
+		padding-left: 0.5rem;
 	}
 
 	h3 {
@@ -132,7 +154,19 @@ ul.plain li {
 @media print {
 	@page {
 		size: A4;
-		margin: 1.5cm;
+		margin: 1.5cm 1.5cm 3cm;
+	}
+
+	@page: left {
+		@bottom-left {
+			content: counter(page);
+		}
+	}
+
+	@page: right {
+		@bottom-right {
+			content: counter(page);
+		}
 	}
 
 	body {

@@ -32,9 +32,9 @@
 		Descriptions are kept concise and sometimes incomplete.</p>
 
 	<ul class="plain">
-		<li><strong><cite>[SR:A]</cite>:</strong> Shadowrun Anarchy</li>
-		<li><strong><cite>[SR:5]</cite>:</strong> Shadowrun 5<sup>th</sup> Edition</li>
-		<li><strong><cite>[SR:6]</cite>:</strong> Shadowrun 6<sup>th</sup> Edition</li>
+		<li><strong><cite>[SRA]</cite>:</strong> Shadowrun Anarchy</li>
+		<li><strong><cite>[SR5]</cite>:</strong> Shadowrun 5<sup>th</sup> Edition</li>
+		<li><strong><cite>[SR6]</cite>:</strong> Shadowrun 6<sup>th</sup> Edition</li>
 	</ul>
 
 	<h2 id="narrations">Turns and Narrations</h2>
@@ -42,7 +42,7 @@
 	<p>Each <strong>turn</strong>, every player has a chance to play out and describe their character's actions, along
 		with other elements of the story going on around them.
 		These descriptions are called <strong>Narrations</strong>, and as the game progresses these Narrations build on
-		each other and form the story of the game.&nbsp;<cite>[SR:A]</cite></p>
+		each other and form the story of the game.&nbsp;<cite>[SRA]</cite></p>
 
 	<p>The order is situation dependent and may be adjusted by spending <a href="#plot-points">Plot Points</a>.
 		If push comes to shove, characters <span class="attr">A</span> + <span class="attr">E</span> can be compared to
@@ -52,7 +52,7 @@
 	<p>6-sided dice are used to determine the outcome of certain actions.
 		Checks are typically <em>opposed</em> rolls, the attacker and defender roll dice simultaneously and compare.
 		The defender sets the threshold for the attacker.
-		To speed things up, the GM may use a fixed threshold instead of a defender's roll.
+		To speed things up, the GM may use a fixed threshold instead of a defender's roll.</p>
 
 	<ul class="plain">
 		<li><strong>Dice pool:</strong>
@@ -66,7 +66,43 @@
 			Hits exceeding the threshold are referred to as net hits
 		</li>
 	</ul>
-	</p>
+
+	<table id="thresholds">
+		<thead>
+			<tr>
+				<th>Difficulty</th>
+				<th>Opposed Dice</th>
+				<th>Threshold</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Very Easy</td>
+				<td align="center">4 dice</td>
+				<td align="center">1</td>
+			</tr>
+			<tr>
+				<td>Easy</td>
+				<td align="center">6 dice</td>
+				<td align="center">2</td>
+			</tr>
+			<tr>
+				<td>Average</td>
+				<td align="center">8 dice</td>
+				<td align="center">3</td>
+			</tr>
+			<tr>
+				<td>Hard</td>
+				<td align="center">10 dice</td>
+				<td align="center">4</td>
+			</tr>
+			<tr>
+				<td>Very Hard</td>
+				<td align="center">12 dice</td>
+				<td align="center">6</td>
+			</tr>
+		</tbody>
+	</table>
 
 	<h3 id="repeating-checks">Repeating Checks</h3>
 	<p>Most checks can be repeated for an accumulative <strong>-2 dice</strong> modifier.</p>
@@ -84,13 +120,11 @@
 		A Teamwork Check is done by selecting a leader who will do the majority of the work.
 		Other characters my assist by rolling a corresponding check.
 		Each helper's hit adds a bonus die to the leader's dice pool.
-		The number of bonus dice is <strong>limited by the leader's Skill (or higher Attribute)</strong>.
-	</p>
+		The number of bonus dice is <strong>limited by the leader's Skill (or higher Attribute)</strong>.</p>
 
 	<h3 id="glitch-die">Glitch Die</h3>
-	<p>A <a href="#plot-point">Plot Point</a> can be spent to introduce the Glitch Die.
-		The Glitch Die is rolled separate from the regular dice pool and does not count towards the hits.
-	</p>
+	<p>A <a href="#plot-points">Plot Point</a> can be spent to introduce the Glitch Die.
+		The Glitch Die is rolled separate from the regular dice pool and does not count towards the hits.</p>
 
 	<ul class="plain">
 		<li><span class="dice">⚀</span>&nbsp;:
@@ -104,8 +138,7 @@
 	<h2 id="plot-points">Plot Points</h2>
 	<p>Plot Points are tokens that can be redeemed for special effects.
 		Both, players and the GM, have the ability to spend a Plot Point.
-		When a Plot Point is spent, the spender gives it to the opposition.
-	</p>
+		When a Plot Point is spent, the spender gives it to the opposition.</p>
 
 	<p>Players <strong>begin</strong> the game <strong>with 3 Plot Points each</strong> and may be awarded more points
 		by the GM.
@@ -139,20 +172,109 @@
 
 	<h3 id="attributes">Attributes</h3>
 
+	<ul class="plain">
+		<li><strong><span class="attr">S</span>&emsp;Strength:</strong>
+			Determines physical strength and represents constitution</li>
+		<li><strong><span class="attr">A</span>&emsp;Agility:</strong>
+			Core combat attribute</li>
+		<li><strong><span class="attr">L</span>&emsp;Logic:</strong>
+			Core technology attribute</li>
+		<li><strong><span class="attr">W</span>&emsp;Willpower:</strong>
+			Core magic attribute</li>
+		<li><strong><span class="attr">C</span>&emsp;Charisma:</strong>
+			Core social attribute</li>
+	</ul>
+
 	<h3 id="edge">Edge</h3>
 
 	<h3 id="essence">Essence</h3>
 
+	<p>Essence starts at 6 for all characters and is reduce by certain <em>unnatural</em> Amps like cyberware.
+		Lower essence will incur penalties on certain magic- and healing-related checks.</p>
+
+	<ul class="plain">
+		<li><strong>Bioware:</strong> -0.5 Essence</li>
+		<li><strong>Cyberware:</strong> -1 Essence</li>
+	</ul>
+
 	<h3 id="skills">Skills</h3>
+
+	<ul class="plain skilllist">
+		<li><strong>Strength:</strong> <i>none</i></li>
+		<li><strong>Agility:</strong>
+			<ul class="plain">
+				<li><strong>Athletics:</strong> Running, jumping, swimming, …</li>
+				<li><strong>Close Combat:</strong> Armed &amp; unarmed melee combat, …</li>
+				<li><strong>Projectile Weapons:</strong> Bows, throwing weapons, …</li>
+				<li><strong>Firearms:</strong> Pistols, shotguns, submachine guns, and rifles</li>
+				<li><strong>Heavy Weapons:</strong> Machine guns, assault cannons, missile launchers, …</li>
+				<li><strong>Vehicle Weapons:</strong> Vehicle-mounted guns, drone-mounted guns, …</li>
+				<li><strong>Stealth:</strong> Sneaking, palming, and pickpocketing</li>
+				<li><strong>Pilot (Ground):</strong> Cars, trucks, bikes, tanks, drones, …</li>
+				<li><strong>Pilot (Other):</strong> Boats, planes, …</li>
+				<li><strong>Escape Artist:</strong> Escaping bindings, shaking a tail, …</li>
+			</ul>
+		</li>
+		<li><strong>Willpower:</strong>
+			<ul class="plain">
+				<li><strong>Conjuring:</strong> Summoning &amp; banishing spirits</li>
+				<li><strong>Sorcery:</strong> Spellcasting, ritual spellcasting, enchanting, and counterspelling</li>
+				<li><strong>Astral Combat:</strong> Astral/spirit combat; Astral plane only</li>
+				<li><strong>Close Combat (Spirits)</strong></li>
+				<li><strong>Survival:</strong> Wilderness survival, navigation, …</li>
+			</ul>
+		</li>
+		<li><strong>Logic:</strong>
+			<ul class="plain">
+				<li><strong>Biotech:</strong> First aid, medicine, and cybertechnology</li>
+				<li><strong>Hacking:</strong> Computer hacking and cybercombat</li>
+				<li><strong>Electronics:</strong> Computer hardware &amp; software</li>
+				<li><strong>Engineering:</strong> Mechanics</li>
+				<li><strong>Tasking:</strong> Summoning sprites, threading complex forms</li>
+				<li><strong>Tracking:</strong> Physical tracking, Matrix tracking, shadowing, …</li>
+				<li><strong><i>Knowledge Skills</i></strong></li>
+			</ul>
+		</li>
+		<li><strong>Charisma:</strong>
+			<ul class="plain">
+				<li><strong>Con:</strong> Con artistry, acting, performance, etiquette, …</li>
+				<li><strong>Intimidation:</strong> Influence, interrogation, torture, …</li>
+				<li><strong>Negotiation:</strong> Bargaining, diplomacy, …</li>
+				<li><strong>Disguise:</strong> Camouflage, cosmetics, costuming, …</li>
+			</ul>
+		</li>
+	</ul>
+
+	<p>This list is not exhaustive.
+		New skills can be added on the fly as the GM sees fit.</p>
+
+	<p id="untrained">Most skills can be used even when <strong>untrained</strong>.
+		Simply roll the associated attribute.</p>
+
+	<p id="perception"><strong>Perception</strong> is not a skill, but handled as an <em>attribute-only check</em>.
+		Roll <span class="attr">L</span> + <span class="attr">W</span> for a perception check.
+		Both attributes combined can also be used as <em>passive</em> perception.</p>
+
+	<p id="specialization">A character can <strong>specialize</strong>in certain elements of a skill (e.g. Pistols of
+		the Firearms skill).
+		A specialization grants a <strong>+2 dice</strong> modifier for associated checks.</p>
 
 	<h3 id="qualities">Qualities</h3>
 
-	<h3 id="amps">Shadow Amps</h3>
+	<p>Qualities are additional traits of your character that come in positive and negative forms.
+		Characters typically start out with 2 positive and 1 negative quality.</p>
 
-	<h3 id="health-armor">Health &amp; Armor</h3>
-	<!-- <span class="cond">🄰</span> -->
+	<h3 id="amps">Shadow Amps (Amps)</h3>
+
+	<p>Every more-human-than-human improvement to your character is handled as a Shadow Amp.
+		Ranging from cybernetic implants (cyberware) to spells, to cyber-decks, etc.</p>
+
+	<h3 id="health">Health</h3>
 	<!-- <span class="cond">🄿</span> -->
 	<!-- <span class="cond">🅂</span> -->
+
+	<h3 id="armor">Armor</h3>
+	<!-- <span class="cond">🄰</span> -->
 
 </body>
 
