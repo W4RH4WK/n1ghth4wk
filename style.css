@@ -47,6 +47,12 @@ body {
 	hyphens: auto;
 }
 
+footer#version {
+	font-family: 'Roboto Condensed';
+	text-align: right;
+	font-size: 75%;
+}
+
 h1 {
 	font-family: Cybrpnuk;
 	font-size: min(7vw, 48pt);
@@ -90,17 +96,21 @@ cite {
 }
 
 ul {
-	padding-left: .5em;
+	padding-left: 1.2em;
 }
 
 ul li {
-	list-style-position: inside;
-	text-indent: -2em;
-	padding-left: 2em;
+	margin: .2em 0;
+}
+
+ul.plain {
+	padding-left: .4em;
 }
 
 ul.plain li {
 	list-style: none;
+	text-indent: -1em;
+	padding-left: 1em;
 }
 
 table {
@@ -139,16 +149,11 @@ table thead th {
 	margin-left: 1pt;
 }
 
-ul.skilllist li {
-	text-indent: 0;
-	padding-left: 0;
-}
-
 ul.skilllist ul li {
 	font-size: 80%;
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen {
 	body {
 		color: #ccc;
 		background: #1e1e1e url('images/bg.png');
@@ -191,23 +196,37 @@ ul.skilllist ul li {
 		margin: 1.5cm 1.5cm 3cm;
 	}
 
-	@page: left {
+	@page :left {
 		@bottom-left {
 			content: counter(page);
 		}
 	}
 
-	@page: right {
+	@page :right {
 		@bottom-right {
 			content: counter(page);
 		}
 	}
 
-	body {
-		columns: 2;
-		padding: 0;
+	@page :first {
+		@bottom-right {
+			content: none;
+		}
+	}
 
+	body {
+		padding: 0;
 		font-size: 11pt;
+	}
+
+	header#title {
+		margin-top: 6cm;
+		font-size: 32pt;
+	}
+
+	section#rules {
+		columns: 2;
+		page-break-before: always;
 	}
 
 	h1 {
