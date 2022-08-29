@@ -125,8 +125,9 @@ table td {
 	padding: .25em 1em;
 }
 
-table thead th {
+table th {
 	border-bottom: solid 2px;
+	text-align: center;
 }
 
 .text-center {
@@ -185,7 +186,7 @@ ul.skilllist ul li {
 		border-bottom-color: #666;
 	}
 
-	table thead th {
+	table th {
 		border-bottom-color: #666;
 	}
 }
@@ -224,9 +225,12 @@ ul.skilllist ul li {
 		font-size: 32pt;
 	}
 
+	section {
+		page-break-before: always;
+	}
+
 	section#rules {
 		columns: 2;
-		page-break-before: always;
 	}
 
 	h1 {
