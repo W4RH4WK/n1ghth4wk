@@ -154,6 +154,11 @@ ul.skilllist ul li {
 	font-size: 80%;
 }
 
+#books table th,
+#books table td {
+	padding: .5em;
+}
+
 @media screen {
 	body {
 		color: #ccc;
