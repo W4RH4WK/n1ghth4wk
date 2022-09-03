@@ -1,38 +1,38 @@
 @font-face {
 	font-family: 'Noto Sans';
-	src: url('fonts/noto-sans.woff2') format('woff2'),
-		url('fonts/noto-sans.woff') format('woff');
+	src: url('../fonts/noto-sans.woff2') format('woff2'),
+		url('../fonts/noto-sans.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Noto Serif';
-	src: url('fonts/noto-serif.woff2') format('woff2'),
-		url('fonts/noto-serif.woff') format('woff');
+	src: url('../fonts/noto-serif.woff2') format('woff2'),
+		url('../fonts/noto-serif.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Noto Sans Symbols';
-	src: url('fonts/noto-sans-symbols.woff2') format('woff2'),
-		url('fonts/noto-sans-symbols.woff') format('woff');
+	src: url('../fonts/noto-sans-symbols.woff2') format('woff2'),
+		url('../fonts/noto-sans-symbols.woff') format('woff');
 }
 
 
 @font-face {
 	font-family: 'Noto Sans Symbols 2';
-	src: url('fonts/noto-sans-symbols-2.woff2') format('woff2'),
-		url('fonts/noto-sans-symbols-2.woff') format('woff');
+	src: url('../fonts/noto-sans-symbols-2.woff2') format('woff2'),
+		url('../fonts/noto-sans-symbols-2.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Roboto Condensed';
-	src: url('fonts/roboto-condensed.woff2') format('woff2'),
-		url('fonts/roboto-condensed.woff') format('woff');
+	src: url('../fonts/roboto-condensed.woff2') format('woff2'),
+		url('../fonts/roboto-condensed.woff') format('woff');
 }
 
 @font-face {
 	font-family: 'Cybrpnuk';
-	src: url('fonts/cybrpnuk.woff2') format('woff2'),
-		url('fonts/cybrpnuk.woff') format('woff');
+	src: url('../fonts/cybrpnuk.woff2') format('woff2'),
+		url('../fonts/cybrpnuk.woff') format('woff');
 }
 
 body {

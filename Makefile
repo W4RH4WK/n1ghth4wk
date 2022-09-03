@@ -1,4 +1,4 @@
-SRC = index.html style.css
+SRC = index.html css/style.css
 
 all: resources/n1ghth4wk.pdf resources/n1ghth4wk-book.pdf
 
