@@ -47,10 +47,16 @@ body {
 	hyphens: auto;
 }
 
-footer#version {
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4em;
 	font-family: 'Roboto Condensed';
-	text-align: right;
 	font-size: 75%;
+}
+
+footer img {
+	width: 90px;
 }
 
 h1 {
