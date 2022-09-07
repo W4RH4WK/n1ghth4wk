@@ -160,6 +160,11 @@ ul.skilllist ul li {
 	font-size: 80%;
 }
 
+#gear table {
+	width: 100%;
+	border: none;
+}
+
 #books table th,
 #books table td {
 	padding: .5em;
@@ -240,8 +245,10 @@ ul.skilllist ul li {
 		page-break-before: always;
 	}
 
-	section#rules {
+	section#rules,
+	section#gear {
 		columns: 2;
+		column-fill: auto;
 	}
 
 	h1 {
