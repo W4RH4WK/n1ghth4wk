@@ -20,23 +20,22 @@
 
 		<p>
 			Vanilla Shadowrun&trade; rules are complicated.
-			And while I don't know whether the game is even sufficiently balanced, I doubt this amount of complexity is needed to give the game enough depth to be enjoyable.
-			Shadowrun 6<sup>th</sup> Edition (6e) was supposed to simplify the rules, but appears rushed and arrived broken beyond repair if you ask me.
+			Not knowing whether the game is sufficiently balanced, I doubt the amount of complexity is needed for the game to be enjoyable.
+			6<sup>th</sup> Edition was supposed to simplify the rules, but appears rushed and arrived broken beyond repair.
 			On my search for a <em>simpler</em> version, I discovered Shadowrun Anarchy.
-			Shadowrun Anarchy is based on 5<sup>th</sup> Edition (5e) and draws a lot of parallels while establishing its own, far simpler, rule set.
+			Establishing its own, far simpler, rule set, Shadowrun Anarchy also draws lots of parallels to 5<sup>th</sup> Edition.
 		</p>
 
 		<p>
-			This document states the <em>homebrew</em> rules that govern my play sessions.
-			These rules are mostly based on Shadowrun Anarchy and will be extended over time.
-			As always, the GM retains the right to overrule established rules.
+			This project establishes the <em>homebrew</em> rules for my game sessions.
+			The rules are loosely based on Shadowrun Anarchy and subject to change.
 			There is neither fluff nor lore here, just mechanics; everything else is found in the <a href="#books">relevant books</a>.
 		</p>
 
 		<ul class="plain">
-			<li><strong><cite>[SRA]</cite>:</strong> Shadowrun Anarchy</li>
-			<li><strong><cite>[SR5]</cite>:</strong> Shadowrun 5<sup>th</sup> Edition</li>
-			<li><strong><cite>[SR6]</cite>:</strong> Shadowrun 6<sup>th</sup> Edition</li>
+			<li><cite>[SRA]</cite>: Shadowrun Anarchy</li>
+			<li><cite>[SR5]</cite>: Shadowrun 5<sup>th</sup> Edition (5e)</li>
+			<li><cite>[SR6]</cite>: Shadowrun 6<sup>th</sup> Edition (6e)</li>
 		</ul>
 
 		<h2 id="narrations">Turns and Narrations</h2>
@@ -76,14 +75,13 @@
 			<li>
 				<strong>Glitch:</strong>
 				When <strong>more than half</strong> the number of dice rolled come up as <span class="dice">⚀</span>, something bad happens in addition to the regular outcome of the Test.
+				Glitches cannot happen on defense Tests.
 			</li>
 			<li>
 				<strong>Critical Glitch:</strong>
 				When a Glitch happens while not achieving a single Hit, something devastating happens.
 			</li>
 		</ul>
-
-		<p>Glitches cannot happen on defense Tests.</p>
 
 		<table id="difficulty">
 			<thead>
@@ -227,7 +225,7 @@
 		</p>
 
 		<ul class="plain">
-			<li><strong>Before roll:</strong> +1 die and <span class="dice">⚃</span> also count as Hits</li>
+			<li><strong>Before roll:</strong> +1 die and <span class="dice">⚃</span> also counts as a Hit</li>
 			<li><strong>After roll (no Glitch):</strong> Reroll all dice that did not come up as Hits</li>
 			<li><strong>After roll (Glitch):</strong> Nullify a Glitch or turn a Critical Glitch into a Glitch</li>
 		</ul>
@@ -351,7 +349,7 @@
 			<li>Stun damage carries over as Physical damage once the Stun Condition Monitor is exhausted</li>
 			<li>
 				When a character receives Physical damage after the Physical Condition Monitor is exhausted, they must make an <span class="attr">S + E</span> (1) Test, increasing the <a href="#difficulty">difficulty</a> each time they receive damage.
-				If they fail the Test, the character is dead 💀.
+				If they fail the Test, the character is dead.
 			</li>
 		</ul>
 
@@ -366,18 +364,19 @@
 		<h3 id="armor">Armor</h3>
 
 		<p>
-			Armor works like temporary health, consuming incoming damage, getting destroyed in the process.
-			Every amor box <span class="cond">🄰</span> consumes one point of damage (Physical or Stun).
+			Armor reduces Physical and Stun damage.
+			Each armor box <span class="cond">🄰</span> can consumes 1 point of damage.
+			Physical damage destroys armor in the process — Stun damage does not.
 		</p>
 
 		<ul>
 			<li>Armor cannot be restored during combat</li>
 			<li>Armored clothing cannot be combined</li>
-			<li>Armored clothing commonly provides positive / negative modifiers</li>
 			<li id="armor-penetration">
-				Attacks that have <var>n</var> <strong>armor penetration</strong> ignore <var>n</var><span class="cond">🄰</span> when dealing damage.
+				Attacks that have <var>n</var> <strong>Armor Penetration (AP)</strong> ignore <var>n</var><span class="cond">🄰</span> when dealing damage.
 				Ignored armor remains intact.
 			</li>
+			<li id="armor-avoidance">Attacks featuring <strong>Armor Avoidance (AA)</strong> make Net Hits count as Armor Penetration instead of bonus damage</li>
 		</ul>
 
 		<p id="armor-plates">
@@ -449,8 +448,8 @@
 
 		<ul>
 			<li>VR grants a +2 modifier to all related Tests</li>
-			<li>Stun damage always applies to the Cyberdeck's Condition Monitor</li>
-			<li>Physical damage is applied to the decker when in VR (armor is ignored), to the Cyberdeck otherwise</li>
+			<li>Matrix Stun damage always applies to the Cyberdeck's Condition Monitor</li>
+			<li>Matrix Physical damage is applied to the decker as Stun damage when in VR (armor is ignored), to the Cyberdeck otherwise</li>
 		</ul>
 
 		<h3 id="technomancers">Technomancers</h3>
@@ -474,7 +473,6 @@
 		<ul>
 			<li>Attack Spells typically state how to defend</li>
 			<li>Only 1 Spell can be sustained at a time</li>
-			<li id="armor-avoidance">Spells featuring <strong>Armor Avoidance (AA)</strong> make Net Hits count as <a href="#armor-penetration">Armor Penetration</a> instead of bonus damage</li>
 			<li>Damage from Astral Combat is applied as Stun damage</li>
 		</ul>
 
@@ -482,8 +480,28 @@
 
 		<ul>
 			<li>Only 1 spirit can be conjured at a time</li>
-			<li>Spirits are armored against non-magical attacks (mundane armor penetration is ineffective)</li>
-			<li>Characters can attack Spirits using <span class="attr">W</span> + Close Combat, armor is ignored, unarmed damage is applied</li>
+			<li>Spirits are armored against non-magical attacks (mundane Armor Penetration is ineffective)</li>
+			<li>Attack Spirits using <span class="attr">W</span> + Close Combat ignores armor and applies unarmed damage</li>
+		</ul>
+
+		<h3 id="conditions">Conditions</h3>
+
+		<ul class="plain">
+			<li><strong>Prone:</strong> +3 to ranged Defense Tests, -3 to melee Defense Tests, movement decreased</li>
+			<li><strong>Cover:</strong> +3 to Defense Tests (directional)</li>
+			<li><strong>Full Cover:</strong> +6 to Defense Tests (directional), breaks line of sight</li>
+			<li><strong>Dazed:</strong> Character can only take one Simple Action per Turn</li>
+			<li><strong>Shocked:</strong> Character can only take one Bonus Action per Turn</li>
+			<li>
+				<strong>Bleeding:</strong>
+				Character takes 1 P damage per Turn (armor is ignored).
+				Biotech (1) Test can be used to stop the bleeding and apply a bandage (takes 2 Turns).
+			</li>
+			<li>
+				<strong>Burning:</strong>
+				Character takes 2 P damage per Turn.
+				Flames can be put out by dropping prone (Bonus Action) and using a Complex Action.
+			</li>
 		</ul>
 	</section>
 
@@ -504,17 +522,17 @@
 				</tr>
 				<tr>
 					<td>Knives</td>
-					<td>P&emsp;S / 2 + 1</td>
+					<td>P&ensp;S / 2 + 1</td>
 					<td>0 / – / –</td>
 				</tr>
 				<tr>
 					<td>Clubs</td>
-					<td>P&emsp;S / 2 + 2</td>
+					<td>P&ensp;S / 2 + 2</td>
 					<td>0 / – / –</td>
 				</tr>
 				<tr>
 					<td>Swords</td>
-					<td>P&emsp;S / 2 + 3</td>
+					<td>P&ensp;S / 2 + 3</td>
 					<td>0 / – / –</td>
 				</tr>
 
@@ -523,17 +541,17 @@
 				</tr>
 				<tr>
 					<td>Throwing Weapons</td>
-					<td>P&emsp;S / 2 + 1</td>
+					<td>P&ensp;S / 2 + 1</td>
 					<td>0 / -2 / –</td>
 				</tr>
 				<tr>
 					<td>Grenades</td>
-					<td>P&emsp;12</td>
+					<td>P&ensp;12</td>
 					<td>0 / 0 / –</td>
 				</tr>
 				<tr>
 					<td>Stun Grenades</td>
-					<td>S&emsp;8</td>
+					<td>S&ensp;10</td>
 					<td>0 / 0 / –</td>
 				</tr>
 
@@ -542,42 +560,42 @@
 				</tr>
 				<tr>
 					<td>Tasers</td>
-					<td>S&emsp;6</td>
+					<td>S&ensp;5</td>
 					<td>0 / -4 / –</td>
 				</tr>
 				<tr>
 					<td>Light Pistols</td>
-					<td>P&emsp;5</td>
+					<td>P&ensp;5</td>
 					<td>0 / -2 / –</td>
 				</tr>
 				<tr>
 					<td>Heavy Pistols</td>
-					<td>P&emsp;6</td>
+					<td>P&ensp;6</td>
 					<td>0 / -2 / –</td>
 				</tr>
 				<tr>
 					<td>Machine Pistols</td>
-					<td>P&emsp;6</td>
+					<td>P&ensp;6</td>
 					<td>0 / -2 / –</td>
 				</tr>
 				<tr>
 					<td>Shotguns</td>
-					<td>P&emsp;9</td>
+					<td>P&ensp;9</td>
 					<td>0 / -2 / –</td>
 				</tr>
 				<tr>
 					<td>Submachine Guns</td>
-					<td>P&emsp;6</td>
+					<td>P&ensp;6</td>
 					<td>0 / 0 / –</td>
 				</tr>
 				<tr>
 					<td>Assault Rifles</td>
-					<td>P&emsp;8</td>
+					<td>P&ensp;8</td>
 					<td>0 / 0 / -2</td>
 				</tr>
 				<tr>
 					<td>Sniper Rifles</td>
-					<td>P&emsp;9</td>
+					<td>P&ensp;9</td>
 					<td>-4 / -2 / 0</td>
 				</tr>
 
@@ -586,12 +604,12 @@
 				</tr>
 				<tr>
 					<td>Machine Guns</td>
-					<td>P&emsp;8</td>
+					<td>P&ensp;8</td>
 					<td>0 / 0 / 0</td>
 				</tr>
 				<tr>
 					<td>Launcher</td>
-					<td>P&emsp;12</td>
+					<td>P&ensp;12</td>
 					<td>0 / 0 / 0</td>
 				</tr>
 			</tbody>
@@ -607,19 +625,18 @@
 					<td>+1 Defense, +1 Initiative</td>
 				</tr>
 				<tr>
+					<td>Actioneer Business Clothes</td>
+					<td><span class="cond">🄰</span>&nbsp;6</td>
+					<td>+1 Social Tests</td>
+				</tr>
+				<tr>
 					<td>Armor Vest</td>
 					<td><span class="cond">🄰</span>&nbsp;9</td>
-					<td></td>
 				</tr>
 				<tr>
 					<td>Armor Jacket</td>
 					<td><span class="cond">🄰</span>&nbsp;12</td>
 					<td>-1 Defense, -1 Initiative</td>
-				</tr>
-				<tr>
-					<td>Actioneer Business Clothes</td>
-					<td><span class="cond">🄰</span>&nbsp;6</td>
-					<td>+1 Social Tests</td>
 				</tr>
 			</tbody>
 		</table>

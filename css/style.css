@@ -39,11 +39,9 @@ body {
 	max-width: 800px;
 	margin: auto;
 	padding: 0em 2em 2em;
-
 	font-family: 'Noto Serif';
 	font-size: 14pt;
-	line-height: 1.5;
-
+	line-height: 1.48;
 	hyphens: auto;
 }
 
@@ -97,7 +95,6 @@ a:hover {
 
 cite {
 	font-size: 75%;
-	font-weight: 100;
 	font-style: normal;
 }
 
