@@ -157,6 +157,13 @@ ul.skilllist ul li {
 	font-size: 80%;
 }
 
+#references {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 75%;
+}
+
 #gear table {
 	width: 100%;
 	border: none;
@@ -258,5 +265,9 @@ ul.skilllist ul li {
 
 	table {
 		font-size: 75%;
+	}
+
+	.screen-only {
+		display: none;
 	}
 }

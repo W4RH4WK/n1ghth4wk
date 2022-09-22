@@ -21,7 +21,7 @@
 		<p>
 			Vanilla Shadowrun&trade; rules are complicated.
 			Not knowing whether the game is sufficiently balanced, I doubt the amount of complexity is needed for the game to be enjoyable.
-			6<sup>th</sup> Edition was supposed to simplify the rules, but appears rushed and arrived broken beyond repair.
+			6<sup>th</sup> Edition was supposed to simplify the rules, but was rushed and arrived broken beyond repair.
 			On my search for a <em>simpler</em> version, I discovered Shadowrun Anarchy.
 			Establishing its own, far simpler, rule set, Shadowrun Anarchy also draws lots of parallels to 5<sup>th</sup> Edition.
 		</p>
@@ -29,14 +29,24 @@
 		<p>
 			This project establishes the <em>homebrew</em> rules for my game sessions.
 			The rules are loosely based on Shadowrun Anarchy and subject to change.
-			There is neither fluff nor lore here, just mechanics; everything else is found in the <a href="#books">relevant books</a>.
+			There is neither fluff nor lore here, just mechanics; everything else is found in the <a href="#books">official books</a>.
 		</p>
 
-		<ul class="plain">
-			<li><cite>[SRA]</cite>: Shadowrun Anarchy</li>
-			<li><cite>[SR5]</cite>: Shadowrun 5<sup>th</sup> Edition (5e)</li>
-			<li><cite>[SR6]</cite>: Shadowrun 6<sup>th</sup> Edition (6e)</li>
-		</ul>
+		<div id="references">
+			<ul class="plain">
+				<li class="screen-only">
+					<a href="https://w4rh4wk.github.io/n1ghth4wk/resources/n1ghth4wk.pdf">[PDF]</a>&emsp;
+					<a href="https://w4rh4wk.github.io/n1ghth4wk/resources/n1ghth4wk-book.pdf">[PDF Booklet]</a>
+				</li>
+				<li><a href="https://w4rh4wk.github.io/n1ghth4wk/resources/n1ghth4wk_character_sheet.pdf">[Character Sheet PDF]</a></li>
+				<li><a href="https://w4rh4wk.github.io/n1ghth4wk/resources/n1ghth4wk_character_sheet.odg">[Character Sheet ODF]</a></li>
+			</ul>
+			<ul class="plain">
+				<li><cite>[SRA]</cite>: Shadowrun Anarchy</li>
+				<li><cite>[SR5]</cite>: Shadowrun 5<sup>th</sup> Edition (5e)</li>
+				<li><cite>[SR6]</cite>: Shadowrun 6<sup>th</sup> Edition (6e)</li>
+			</ul>
+		</div>
 
 		<h2 id="narrations">Turns and Narrations</h2>
 
@@ -396,16 +406,6 @@
 			The Device Rating is used as threshold and Attribute(s) for Tests.
 		</p>
 
-		<h3 id="character-sheet">Character Sheet</h3>
-
-		<p>A character sheet for printing is available <a href="https://w4rh4wk.github.io/n1ghth4wk/resources/n1ghth4wk_character_sheet.pdf">online</a>.</p>
-
-		<p>
-			The <a href="https://w4rh4wk.github.io/n1ghth4wk/resources/n1ghth4wk_character_sheet.odg"><abbr title="OpenDocument Graphic">ODG</abbr> file</a> is also available and can used directly for playing.
-			Modify the layout to fit your character.
-			Lock the <em>layout</em> layer and put your writing into a new, dedicated layer.
-		</p>
-
 		<h2 id="combat">Combat</h2>
 
 		<h3 id="actions">Actions</h3>
@@ -431,7 +431,10 @@
 			</li>
 		</ul>
 
-		<p id="movement">Characters can freely move short distances. Moving longer distances will consume actions depending on the distance.</p>
+		<p id="movement">
+			Characters can freely move 5 meters, spend a Simple Action to move 10 meters, or spend a Complex Action to sprint 20+ meters.
+			Sprint entails an Athletics check where each Hit grants you 1 additional meter of movement.
+		</p>
 
 		<h3 id="attack-defense">Attack &amp; Defense</h3>
 
@@ -487,11 +490,12 @@
 		<h3 id="conditions">Conditions</h3>
 
 		<ul class="plain">
-			<li><strong>Prone:</strong> +3 to ranged Defense Tests, -3 to melee Defense Tests, movement decreased</li>
-			<li><strong>Cover:</strong> +3 to Defense Tests (directional)</li>
-			<li><strong>Full Cover:</strong> +6 to Defense Tests (directional), breaks line of sight</li>
+			<li><strong>Sprinting:</strong> +3 to ranged Defense Tests</li>
+			<li><strong>Prone:</strong> -3 to Defense Tests within melee range, +3 to Defense Tests beyond melee range, movement halved</li>
+			<li><strong>Cover:</strong> +3 to Defense Tests beyond melee range (directional)</li>
+			<li><strong>Full Cover:</strong> +6 to Defense Tests beyond melee range (directional), breaks line of sight</li>
 			<li><strong>Dazed:</strong> Character can only take one Simple Action per Turn</li>
-			<li><strong>Shocked:</strong> Character can only take one Bonus Action per Turn</li>
+			<li><strong>Shocked:</strong> Character can only take one Bonus Action per Turn and can't move</li>
 			<li>
 				<strong>Bleeding:</strong>
 				Character takes 1 P damage per Turn (armor is ignored).
@@ -515,6 +519,11 @@
 
 		<h3>Weapons</h3>
 
+		<p>
+			Range modifiers are state as loose categories from melee range to <em>far</em>.
+			A – means that the weapon cannot be used at this range.
+		</p>
+
 		<table>
 			<tbody>
 				<tr>
@@ -523,17 +532,17 @@
 				<tr>
 					<td>Knives</td>
 					<td>P&ensp;S / 2 + 1</td>
-					<td>0 / – / –</td>
+					<td>0/–/–/–/–</td>
 				</tr>
 				<tr>
 					<td>Clubs</td>
 					<td>P&ensp;S / 2 + 2</td>
-					<td>0 / – / –</td>
+					<td>0/–/–/–/–</td>
 				</tr>
 				<tr>
 					<td>Swords</td>
 					<td>P&ensp;S / 2 + 3</td>
-					<td>0 / – / –</td>
+					<td>0/–/–/–/–</td>
 				</tr>
 
 				<tr>
@@ -542,17 +551,17 @@
 				<tr>
 					<td>Throwing Weapons</td>
 					<td>P&ensp;S / 2 + 1</td>
-					<td>0 / -2 / –</td>
+					<td>0/-3/-3/–/–</td>
 				</tr>
 				<tr>
 					<td>Grenades</td>
 					<td>P&ensp;12</td>
-					<td>0 / 0 / –</td>
+					<td>0/0/-3/–/–</td>
 				</tr>
 				<tr>
 					<td>Stun Grenades</td>
 					<td>S&ensp;10</td>
-					<td>0 / 0 / –</td>
+					<td>0/0/-3/–/–</td>
 				</tr>
 
 				<tr>
@@ -561,42 +570,42 @@
 				<tr>
 					<td>Tasers</td>
 					<td>S&ensp;5</td>
-					<td>0 / -4 / –</td>
+					<td>0/-4/–/–/–</td>
 				</tr>
 				<tr>
 					<td>Light Pistols</td>
 					<td>P&ensp;5</td>
-					<td>0 / -2 / –</td>
+					<td>0/0/-2/–/–</td>
 				</tr>
 				<tr>
 					<td>Heavy Pistols</td>
 					<td>P&ensp;6</td>
-					<td>0 / -2 / –</td>
+					<td>0/0/-2/–/–</td>
 				</tr>
 				<tr>
 					<td>Machine Pistols</td>
 					<td>P&ensp;6</td>
-					<td>0 / -2 / –</td>
+					<td>0/0/-4/–/–</td>
 				</tr>
 				<tr>
 					<td>Shotguns</td>
 					<td>P&ensp;9</td>
-					<td>0 / -2 / –</td>
+					<td>-3/0/-3/–/–</td>
 				</tr>
 				<tr>
 					<td>Submachine Guns</td>
 					<td>P&ensp;6</td>
-					<td>0 / 0 / –</td>
+					<td>-2/0/0/–/–</td>
 				</tr>
 				<tr>
 					<td>Assault Rifles</td>
 					<td>P&ensp;8</td>
-					<td>0 / 0 / -2</td>
+					<td>-4/0/0/-2/–</td>
 				</tr>
 				<tr>
 					<td>Sniper Rifles</td>
 					<td>P&ensp;9</td>
-					<td>-4 / -2 / 0</td>
+					<td>-4/-2/0/0/0</td>
 				</tr>
 
 				<tr>
@@ -605,12 +614,12 @@
 				<tr>
 					<td>Machine Guns</td>
 					<td>P&ensp;8</td>
-					<td>0 / 0 / 0</td>
+					<td>-6/0/0/0/0</td>
 				</tr>
 				<tr>
 					<td>Launcher</td>
 					<td>P&ensp;12</td>
-					<td>0 / 0 / 0</td>
+					<td>–/-3/0/0/–</td>
 				</tr>
 			</tbody>
 		</table>
@@ -874,7 +883,7 @@
 	</section>
 
 	<footer>
-		<div>v0.8 Draft</div>
+		<div>v0.9 Draft</div>
 		<div>
 			<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
 				<img src="images/cc_by_sa.svg" alt="CC-BY-SA">
