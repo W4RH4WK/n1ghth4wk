@@ -1,3 +1,6 @@
 {
-    "html.format.wrapLineLength": false
+    "html.format.wrapLineLength": false,
+    "cSpell.words": [
+        "Groundcraft"
+    ]
 }
